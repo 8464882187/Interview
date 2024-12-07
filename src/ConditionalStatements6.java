@@ -3,11 +3,14 @@ import java.util.Scanner;
 public class ConditionalStatements6 {
     public static void main(String[] args) {
         Scanner s= new Scanner(System.in);
-        int a=s.nextInt();
-        System.out.println("Enter number1::");
-        int b=s.nextInt();
-        System.out.println("Enter number2::");
-        int c=s.nextInt();
-        System.out.println("Enter number3::");
+        System.out.println("Enter password::");
+       String s1=s.nextLine();
+        if(s1.length()>8){
+            System.out.println("Strong ");
+        }else if(s1.length()==8){
+            System.out.println("Normal");
+        }else{
+            System.out.println("Weak");
+        }
     }
 }
